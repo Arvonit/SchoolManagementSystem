@@ -1,4 +1,4 @@
 package com.skinnybonesarv;
 
-public class TeacherInfo {
+public class Teacher {
 }

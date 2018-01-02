@@ -1,21 +1,25 @@
 package com.skinnybonesarv;
 
-public class StudentInfo {
+public class Student {
     // Declarations
     private String firstName;
     private String lastName;
     private String sex;
+    private int grade;
     private int yearBorn;
     private int monthBorn;
     private int dayBorn;
+    private int id;
 
-    public StudentInfo(String firstName, String lastName, String sex, int yearBorn, int monthBorn, int dayBorn, int ID) {
+    public Student(String firstName, String lastName, String sex, int grade, int monthBorn, int dayBorn, int yearBorn, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.sex = sex;
-        this.yearBorn = yearBorn;
+        this.grade = grade;
         this.monthBorn = monthBorn;
         this.dayBorn = dayBorn;
+        this.yearBorn = yearBorn;
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -42,6 +46,14 @@ public class StudentInfo {
         this.sex = sex;
     }
 
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
     public int getYearBorn() {
         return yearBorn;
     }
@@ -64,5 +76,13 @@ public class StudentInfo {
 
     public void setDayBorn(int dayBorn) {
         this.dayBorn = dayBorn;
+    }
+
+    public int getID() {
+        return id;
+    }
+
+    public void setID(int id) {
+        this.id = id;
     }
 }

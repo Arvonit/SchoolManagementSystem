@@ -1,50 +1,78 @@
 package com.skinnybonesarv;
 
-import javax.swing.filechooser.FileSystemView;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         try {
-            // Misc.
-            String documentsDir = FileSystemView.getFileSystemView().getDefaultDirectory().getPath();
-            String schoolName;
+            // ----------- DECLARATIONS -----------
+            FileIO fileIO = new FileIO();
+            File studentInfoFile = fileIO.createFile("student_info");
 
-            Scanner userIn = new Scanner(System.in);
+            ArrayList<Student> studentList;
 
-            // Student Info
-            File studentInfoFile = new File(documentsDir + "\\student_info.txt");
-            FileWriter studentInfoIn = new FileWriter(studentInfoFile, true);
-            Scanner studentInfoOut = new Scanner(studentInfoFile);
+            int choice;
+            int number;
 
-            // School Info
-            File schoolInfoFile = new File(documentsDir + "\\school_info.txt");
-            FileWriter schoolInfoIn = new FileWriter(schoolInfoFile, true);
-            Scanner schoolInfoOut = new Scanner(schoolInfoFile);
+            Scanner in = new Scanner(System.in);
 
-            // ----------- Setup -----------
-            // Check if administrator has entered school name
-            if (schoolInfoOut.hasNext()) {
-                schoolName = schoolInfoOut.nextLine();
-            } else {
-                System.out.print("Enter the name of your school: ");
-                schoolName = userIn.nextLine();
-                schoolInfoIn.append(schoolName);
-            }
-
-            // ----------- Welcome Screen -----------
+            // ----------- WELCOME SCREEN -----------
             System.out.println("-------------------------------------------------------------------------------------");
-            System.out.println("Welcome to the " + schoolName + " Student Information System!");
+            System.out.println("Welcome to the School Management System!");
             System.out.println("Version: Pre-Alpha 1.0");
             System.out.println("Copyright © 2017 SkinnyBonesArv.  All rights reserved.");
             System.out.println("-------------------------------------------------------------------------------------");
 
-            schoolInfoIn.close();
-            schoolInfoOut.close();
+            // ----------- MAIN SCREEN -----------
+            if (!(fileIO.isFileEmpty(studentInfoFile))) {
+                while(true) {
+                    System.out.println();
+                    System.out.print("Would you like to add students (1), remove students (2), " +
+                            "or modify students (3)? ");
+                    choice = in.nextInt();
+
+                    switch(choice) {
+                        case 1:
+                            // Input number of students to add
+                            System.out.print("How many students would you like to add?  ");
+                            number = in.nextInt();
+
+                            studentList = FileIO.createStudent(studentInfoFile, number, in);
+                            FileIO.addStudent(studentInfoFile, studentList);
+                            break;
+                        case 2:
+                            System.out.println("First: Last: Sex: Grade: Date of Birth: ID:");
+                            studentList = FileIO.viewStudents(studentInfoFile);
+
+                            System.out.print("Enter the ID of the student you wish to remove: ");
+                            choice = in.nextInt();
+
+                            FileIO.deleteStudent(studentInfoFile, studentList, choice);
+
+                            studentList = FileIO.viewStudents(studentInfoFile);
+                            break;
+                        case 3:
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            // ----------- FIRST TIME USE SCREEN -----------
+            } else {
+                System.out.println();
+                System.out.println("Welcome to the student setup configuration!");
+
+                // Input number of students to add
+                System.out.print("How many students would you like to add? (You can add more later.) ");
+                number = in.nextInt();
+
+                studentList = FileIO.createStudent(studentInfoFile, number, in);
+                FileIO.addStudent(studentInfoFile, studentList);
+            }
         } catch(IOException e) {
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
 package com.skinnybonesarv;
 
-public class SchoolInfo {
+public interface Person {
 }
