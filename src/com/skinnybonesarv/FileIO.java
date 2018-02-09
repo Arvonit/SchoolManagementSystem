@@ -1,3 +1,8 @@
+/**
+ * @author SkinnyBonesArv
+ * @version 1/15/2018
+ */
+
 package com.skinnybonesarv;
 
 import javax.swing.filechooser.FileSystemView;
@@ -24,18 +29,12 @@ public class FileIO {
     // ---------- CHECK IF FILE IS EMPTY ----------
     public static boolean isFileEmpty(File file) throws FileNotFoundException {
         Scanner fileReader = new Scanner(file);
-        if (fileReader.hasNext()) {
-            return false;
-        } else {
-            return true;
-        }
+        return fileReader.hasNext();
     }
 
     // ---------- CREATE AND STORE FILE BASED ON GIVEN NAME ----------
     public File createFile(String fileName) {
-        String documentsDir = FileSystemView.getFileSystemView().getDefaultDirectory().getPath();
-        File file = new File(documentsDir + "\\" + fileName + ".txt");
-        return file;
+        return new File(System.getProperty("user.home") + File.separator + fileName + ".txt");
     }
 
     // ---------- GET THE NUMBER OF LINES IN A FILE ----------
@@ -43,7 +42,7 @@ public class FileIO {
         Scanner fileReader = new Scanner(file);
         numOfLines = 0;
 
-        while(fileReader.hasNextLine()) {
+        while (fileReader.hasNextLine()) {
             numOfLines++;
             fileReader.nextLine();
         }
@@ -52,12 +51,13 @@ public class FileIO {
     }
 
     // ---------- CREATE STUDENT AND ADD STUDENT TO ARRAYLIST OF TYPE STUDENT ----------
-    public static ArrayList<Student> createStudent(File file, int numOfStudents, Scanner in) throws FileNotFoundException {
+    public static ArrayList<Student> createStudent(File file, int numOfStudents, Scanner in)
+            throws FileNotFoundException {
         ArrayList<Student> studentList = new ArrayList<Student>();
         Scanner fileReader = new Scanner(file);
         String text = "";
 
-        if(!(isFileEmpty(file))) {
+        if (!(isFileEmpty(file))) {
             while (fileReader.hasNext()) {
                 text = fileReader.next();
             }
@@ -106,7 +106,7 @@ public class FileIO {
         for (idx = 0; idx < studentList.size(); idx++) {
             Student student = studentList.get(idx);
 
-            if(!(isFileEmpty(file))) {
+            if (!(isFileEmpty(file))) {
                 fileWriter.append(System.lineSeparator());
             }
 
@@ -129,7 +129,7 @@ public class FileIO {
         numOfLines = getFileLength(file);
 
         // Loop through file to store all values in ArrayList and print them all out
-        for(idx = 0; idx < numOfLines; idx++) {
+        for (idx = 0; idx < numOfLines; idx++) {
             firstName = fileReader.next();
             lastName = fileReader.next();
             sex = fileReader.next();
@@ -157,24 +157,82 @@ public class FileIO {
         // Declarations
         FileWriter fileWriter = new FileWriter(file, true);
         numOfLines = getFileLength(file);
-        int studentLineNum = 0;
+        int delLineNum = 0;
         Student student;
 
         // Loop through ArrayList until given ID is the same as the ID in the idx-th row of ArrayList
-        for(idx = 0; idx < numOfLines; idx++) {
+        for (idx = 0; idx < numOfLines; idx++) {
             student = studentList.get(idx);
             // Exit loop if IDs are the same
-            if(id == student.getID()) {
-                studentLineNum = idx;
+            if (id == student.getID()) {
+                delLineNum = idx;
             }
         }
 
         // Remove the row in the ArrayList that contains the given ID
-        studentList.remove(studentLineNum);
-
+        studentList.remove(delLineNum);
         rewriteFile(file, studentList);
 
         fileWriter.close();
+    }
+
+    public static void modifyStudent(File file, ArrayList<Student> studentList, int id) throws IOException {
+        // Declarations
+        FileWriter fileWriter = new FileWriter(file, true);
+        numOfLines = getFileLength(file);
+        int delLineNum = 0;
+        Student student;
+        int choice;
+        Scanner in = new Scanner(System.in);
+
+        // Loop through ArrayList until given ID is the same as the ID in the idx-th row of ArrayList
+        for (idx = 0; idx < numOfLines; idx++) {
+            student = studentList.get(idx);
+            // Exit loop if IDs are the same
+            if (id == student.getID()) {
+                delLineNum = idx;
+            }
+        }
+
+        // Ask user to which parts of student to modify
+        System.out.println("Which part of the student would you like to modify? ");
+        System.out.println("First Name (1)\n" +
+                "Last Name (2)\n" +
+                "Sex (3)\n" +
+                "Grade (4)\n" +
+                "Date of Birth (5)\n");
+        choice = in.nextInt();
+        student = studentList.get(delLineNum);
+
+        switch (choice) {
+            case 1:
+                System.out.println("Enter new first name: ");
+                firstName = in.next();
+                student.setFirstName(firstName);
+                break;
+            case 2:
+                lastName = in.next();
+                student.setLastName(lastName);
+                break;
+            case 3:
+                sex = in.next();
+                student.setSex(sex);
+                break;
+            case 4:
+                grade = in.nextInt();
+                student.setGrade(grade);
+                break;
+            case 5:
+                monthBorn = in.nextInt();
+                dayBorn = in.nextInt();
+                yearBorn = in.nextInt();
+                student.setMonthBorn(monthBorn);
+                student.setDayBorn(dayBorn);
+                student.setYearBorn(yearBorn);
+                break;
+            default:
+                break;
+        }
     }
 
     // ---------- REWRITE THE FILE USING NEW ARRAYLIST ----------
@@ -185,7 +243,7 @@ public class FileIO {
             Student student = studentList.get(idx);
 
             // Figure out why isFileEmpty(file) method won't work here
-            if(idx > 0) {
+            if (idx > 0) {
                 fileWriter.append(System.lineSeparator());
             }
 

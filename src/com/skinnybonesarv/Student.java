@@ -1,3 +1,8 @@
+/**
+ * @author SkinnyBonesArv
+ * @version 1/15/2018
+ */
+
 package com.skinnybonesarv;
 
 public class Student {
