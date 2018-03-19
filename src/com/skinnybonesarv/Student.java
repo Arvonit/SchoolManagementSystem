@@ -7,7 +7,7 @@ package com.skinnybonesarv;
 
 public class Student {
     // Declarations
-    private String firstName;
+    /*private String firstName;
     private String lastName;
     private String sex;
     private int grade;
@@ -15,6 +15,7 @@ public class Student {
     private int monthBorn;
     private int dayBorn;
     private int id;
+    private int grade;
 
     public Student(String firstName, String lastName, String sex, int grade, int monthBorn, int dayBorn, int yearBorn, int id) {
         this.firstName = firstName;
@@ -89,5 +90,5 @@ public class Student {
 
     public void setID(int id) {
         this.id = id;
-    }
+    }*/
 }

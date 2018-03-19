@@ -11,11 +11,12 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class FileIO {
     // ---------- DECLARATIONS ----------
-    private static String firstName;
+    /*private static String firstName;
     private static String lastName;
     private static String sex;
     private static int grade;
@@ -25,21 +26,16 @@ public class FileIO {
     private static int id;
     private static int numOfLines;
     private static int idx;
-
-    // ---------- CHECK IF FILE IS EMPTY ----------
-    public static boolean isFileEmpty(File file) throws FileNotFoundException {
-        Scanner fileReader = new Scanner(file);
-        return fileReader.hasNext();
-    }
+    private static Scanner fileReader;
 
     // ---------- CREATE AND STORE FILE BASED ON GIVEN NAME ----------
     public File createFile(String fileName) {
-        return new File(System.getProperty("user.home") + File.separator + fileName + ".txt");
+        return new File(System.getProperty("user.home") + File.separator + fileName);
     }
 
     // ---------- GET THE NUMBER OF LINES IN A FILE ----------
     public static int getFileLength(File file) throws FileNotFoundException {
-        Scanner fileReader = new Scanner(file);
+        fileReader = new Scanner(file);
         numOfLines = 0;
 
         while (fileReader.hasNextLine()) {
@@ -54,7 +50,7 @@ public class FileIO {
     public static ArrayList<Student> createStudent(File file, int numOfStudents, Scanner in)
             throws FileNotFoundException {
         ArrayList<Student> studentList = new ArrayList<Student>();
-        Scanner fileReader = new Scanner(file);
+        fileReader = new Scanner(file);
         String text = "";
 
         if (!(isFileEmpty(file))) {
@@ -66,7 +62,6 @@ public class FileIO {
         } else {
             id = 0;
         }
-
 
         for (idx = 0; idx < numOfStudents; idx++) {
             System.out.print("Enter first name: ");
@@ -94,7 +89,6 @@ public class FileIO {
         }
 
         fileReader.close();
-
         return studentList;
     }
 
@@ -255,5 +249,5 @@ public class FileIO {
         System.out.println("Operation successful.");
 
         fileWriter.close();
-    }
+    }*/
 }
