@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * To-Do:
+ * TODO:
  * - Finish ability to modify students
  * - Modify code for removing students to be cleaner and more efficient
  * - Add the ability for teachers to managed
@@ -29,10 +29,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        try {
+        /*try {
             // ----------- DECLARATIONS -----------
             FileIO fileIO = new FileIO();
-            File studentInfoFile = fileIO.createFile("student_info");
+            File studentInfoFile = fileIO.createFile("student_info.txt");
 
             ArrayList<Student> studentList;
 
@@ -49,7 +49,7 @@ public class Main {
             System.out.println("-------------------------------------------------------------------------------------");
 
             // ----------- MAIN SCREEN -----------
-            if (!(fileIO.isFileEmpty(studentInfoFile))) {
+            if (fileIO.getFileLength(studentInfoFile) == 0) {
                 while (true) {
                     System.out.println();
                     System.out.print("Would you like to add students (1), remove students (2), " +
@@ -109,6 +109,6 @@ public class Main {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
