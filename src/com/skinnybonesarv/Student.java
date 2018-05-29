@@ -25,6 +25,11 @@ public class Student extends Person {
         super.setID(sNumOfStudents);
     }
 
+    // Constructor for Binary Search
+    public Student(int id) {
+        super(id);
+    }
+
     public int getGrade() {
         return mGrade;
     }

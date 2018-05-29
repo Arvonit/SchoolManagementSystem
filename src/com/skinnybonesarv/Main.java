@@ -25,7 +25,8 @@ public class Main {
         if (Student.getFileLength() > 0) {
             sStudentList = Student.readFromFile();
         } else {
-            System.out.println("Due to this being the first run of the program, you must create one student.");
+            System.out.println("Since this is either the first run of the program or there are no students left," +
+                    " you must create one student.");
             addStudent();
         }
 
@@ -99,7 +100,9 @@ public class Main {
         try {
             id = sConsoleIn.nextInt();
 
-            sStudentList.remove(id - 1);
+            Student s = new Student(id);
+            int i = Collections.binarySearch(sStudentList, s, new PersonIDComparator());
+            sStudentList.remove(i);
             Student.saveChangesToFile(sStudentList);
             System.out.println("Operation completed successfully.");
         } catch (InputMismatchException e) {
@@ -117,7 +120,10 @@ public class Main {
         try {
             id = sConsoleIn.nextInt();
 
-            System.out.println("Which part of the student would you like to modify?" +
+            Student s = new Student(id);
+            int i = Collections.binarySearch(sStudentList, s, new PersonIDComparator());
+
+            System.out.println("Which part of the student would you like to modify?\n" +
                     "\t- Last Name (1)\n" +
                     "\t- First Name (2)\n" +
                     "\t- Sex (3)\n" +
@@ -129,31 +135,31 @@ public class Main {
                 case 1:
                     System.out.print("Enter new last name: ");
                     String lastName = sConsoleIn.next();
-                    sStudentList.get(id - 1).setLastName(lastName);
+                    sStudentList.get(i).setLastName(lastName);
                     break;
                 case 2:
                     System.out.print("Enter new first name: ");
                     String firstName = sConsoleIn.next();
-                    sStudentList.get(id - 1).setFirstName(firstName);
+                    sStudentList.get(i).setFirstName(firstName);
                     break;
                 case 3:
-                    System.out.print("Enter sex (Male, Female, or Other): ");
+                    System.out.print("Enter new sex (Male, Female, or Other): ");
                     String sexStr = sConsoleIn.next();
-                    sStudentList.get(id - 1).setSex(Person.Sex.valueOf(sexStr.toUpperCase()));
+                    sStudentList.get(i).setSex(Person.Sex.valueOf(sexStr.toUpperCase()));
                     break;
                 case 4:
-                    System.out.print("Enter year of birth: ");
+                    System.out.print("Enter new year of birth: ");
                     int yearBorn = sConsoleIn.nextInt();
-                    System.out.print("Enter month of birth: ");
+                    System.out.print("Enter new month of birth: ");
                     int monthBorn = sConsoleIn.nextInt();
-                    System.out.print("Enter day of birth: ");
+                    System.out.print("Enter new day of birth: ");
                     int dayBorn = sConsoleIn.nextInt();
-                    sStudentList.get(id - 1).setDateOfBirth(LocalDate.of(yearBorn, monthBorn, dayBorn));
+                    sStudentList.get(i).setDateOfBirth(LocalDate.of(yearBorn, monthBorn, dayBorn));
                     break;
                 case 5:
-                    System.out.print("Enter grade: ");
+                    System.out.print("Enter new grade: ");
                     int grade = sConsoleIn.nextInt();
-                    sStudentList.get(id - 1).setGrade(grade);
+                    sStudentList.get(i).setGrade(grade);
                     break;
             }
 

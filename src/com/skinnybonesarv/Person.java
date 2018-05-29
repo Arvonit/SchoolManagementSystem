@@ -18,7 +18,7 @@ import java.time.Period;
  *
  * @author SkinnyBonesArv
  */
-public abstract class Person implements Comparable<Person> {
+public abstract class Person {
 
     private String mLastName;
     private String mFirstName;
@@ -31,6 +31,11 @@ public abstract class Person implements Comparable<Person> {
         mFirstName = firstName;
         mDateOfBirth = dateOfBirth;
         mSex = sex;
+    }
+
+    // Constructor for Binary Search
+    public Person(int id) {
+        mID = id;
     }
 
     public enum Sex {
@@ -90,11 +95,6 @@ public abstract class Person implements Comparable<Person> {
     @Override
     public String toString() {
         return new String().format("%-15s %-15s %-20s %-10s ", getLastName(), getFirstName(), getDateOfBirth(), getSex());
-    }
-
-    @Override
-    public int compareTo(Person p) {
-        return getLastName().compareTo(p.getLastName());
     }
 
 }
