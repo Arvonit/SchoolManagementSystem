@@ -6,23 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d66d6610-1d14-4a12-87e3-24432ca05580" name="Default" comment="Fixed searching for student by ID">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/ui/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/util/FormatValidator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/com/skinnybonesarv/util/FormatValidatorTest.java" />
+    <list default="true" id="d66d6610-1d14-4a12-87e3-24432ca05580" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SchoolManagmentSystem.iml" afterPath="$PROJECT_DIR$/SchoolManagmentSystem.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolManagmentSystem/.gitignore" afterPath="$PROJECT_DIR$/out/production/SchoolManagmentSystem/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Class.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Class.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Course.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Course.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Person.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Person.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/PersonIDComparator.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/util/PersonIDComparator.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/PersonLastNameComparator.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/util/PersonLastNameComparator.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Schedule.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Schedule.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/Student.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Student.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" afterPath="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +23,7 @@
     <favorites_list name="SchoolManagmentSystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/ui/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,13 +127,13 @@
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/Person.java" />
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/Student.java" />
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" />
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/data/Student.java" />
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/ui/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/com/skinnybonesarv/util/FormatValidator.java" />
         <option value="$PROJECT_DIR$/test/com/skinnybonesarv/util/FormatValidatorTest.java" />
         <option value="$PROJECT_DIR$/test/com/skinnybonesarv/controller/StudentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" />
+        <option value="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" />
       </list>
     </option>
   </component>
@@ -202,13 +176,6 @@
               <item name="SchoolManagmentSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="skinnybonesarv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SchoolManagmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SchoolManagmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="skinnybonesarv" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -438,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527605569533</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Organized project and added vetting of all inputted variables">
+      <created>1527644077649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527644077649</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -454,7 +428,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -468,7 +441,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="FRC" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -554,7 +527,8 @@
     <MESSAGE value="Updated project a bit" />
     <MESSAGE value="Updated project significantly" />
     <MESSAGE value="Rewrite of project is complete for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrite of project is complete for now" />
+    <MESSAGE value="Organized project and added vetting of all inputted variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organized project and added vetting of all inputted variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,6 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,13 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,6 +747,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,6 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -792,6 +770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -826,6 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,19 +824,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/skinnybonesarv/controller/StudentControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/util/FormatValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/skinnybonesarv/controller/StudentControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="315">
+          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -865,7 +858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skinnybonesarv/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
+        <state relative-caret-position="1588">
           <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
