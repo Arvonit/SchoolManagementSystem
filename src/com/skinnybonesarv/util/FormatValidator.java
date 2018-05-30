@@ -8,9 +8,13 @@ public class FormatValidator {
     public static String checkStringFormat(String s) throws StringFormatException {
         char[] charArr = s.toCharArray();
 
-        for (char c : charArr)
-            if (!Character.isLetter(c))
-                throw new StringFormatException();
+        if (s.equals("")) {
+            throw new StringFormatException();
+        } else {
+            for (char c : charArr)
+                if (!Character.isLetter(c))
+                    throw new StringFormatException();
+        }
 
         return s;
     }
