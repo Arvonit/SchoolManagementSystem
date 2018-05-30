@@ -1,4 +1,4 @@
-package com.skinnybonesarv;
+package com.skinnybonesarv.data;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -27,10 +27,10 @@ public abstract class Person {
     private Sex mSex;
 
     public Person(String lastName, String firstName, LocalDate dateOfBirth, Sex sex) {
-        mLastName = lastName;
-        mFirstName = firstName;
-        mDateOfBirth = dateOfBirth;
-        mSex = sex;
+        setLastName(lastName);
+        setFirstName(firstName);
+        setDateOfBirth(dateOfBirth);
+        setSex(sex);
     }
 
     // Constructor for Binary Search
@@ -47,7 +47,7 @@ public abstract class Person {
     }
 
     public void setLastName(String lastName) {
-        mLastName = lastName;
+        mLastName = lastName.substring(0, 1).toUpperCase() + lastName.substring(1, lastName.length()).toLowerCase();
     }
 
     public String getFirstName() {
@@ -55,7 +55,7 @@ public abstract class Person {
     }
 
     public void setFirstName(String firstName) {
-        mFirstName = firstName;
+        mFirstName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1, firstName.length()).toLowerCase();
     }
 
     public LocalDate getDateOfBirth() {

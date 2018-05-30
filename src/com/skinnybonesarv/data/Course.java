@@ -1,4 +1,4 @@
-package com.skinnybonesarv;
+package com.skinnybonesarv.data;
 
 /**
  * TODO: Finish implementing toString method.

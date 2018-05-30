@@ -1,4 +1,6 @@
-package com.skinnybonesarv;
+package com.skinnybonesarv.util;
+
+import com.skinnybonesarv.data.Person;
 
 import java.util.Comparator;
 

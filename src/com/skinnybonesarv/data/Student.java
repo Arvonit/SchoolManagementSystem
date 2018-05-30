@@ -1,4 +1,4 @@
-package com.skinnybonesarv;
+package com.skinnybonesarv.data;
 
 import java.io.*;
 import java.time.LocalDate;
@@ -20,7 +20,7 @@ public class Student extends Person {
 
     public Student(String lastName, String firstName, LocalDate dateOfBirth, Sex sex, int grade) {
         super(lastName, firstName, dateOfBirth, sex);
-        mGrade = grade;
+        setGrade(grade);
         sNumOfStudents++;
         super.setID(sNumOfStudents);
     }
