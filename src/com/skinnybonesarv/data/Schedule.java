@@ -51,7 +51,7 @@ public class Schedule {
 
     @Override
     public String toString() {
-        return new String().format("Schedule - Number of Courses: %d", mNumOfCourses);
+        return String.format("Schedule - Number of Courses: %d", mNumOfCourses);
     }
 
 }

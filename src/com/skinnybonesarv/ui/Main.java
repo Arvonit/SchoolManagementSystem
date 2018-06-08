@@ -12,8 +12,17 @@ import java.util.*;
  */
 public class Main {
 
-    private static List<Student> sStudentList = null;
-    private static Scanner sConsoleIn = new Scanner(System.in);
+    private static List<Student> sStudentList;
+    private static Scanner sConsoleIn;
+
+    static {
+        if (Student.getFileLength() > 0) {
+            sStudentList = Student.readFromFile();
+        } else {
+            sStudentList = new ArrayList<>();
+        }
+        sConsoleIn = new Scanner(System.in);
+    }
 
     public static void main(String[] args) {
         int option = 0;
@@ -22,13 +31,6 @@ public class Main {
         System.out.println("Welcome to SkinnyBonesArv's School Management System!");
         System.out.println("Version: Alpha 1.0");
         System.out.println("-------------------------------------------------------------------------------------");
-
-        if (Student.getFileLength() > 0) {
-            sStudentList = Student.readFromFile();
-        } else {
-            sStudentList = new ArrayList<>();
-
-        }
 
         while (option != 5) {
             try {

@@ -71,12 +71,8 @@ public class StudentController {
         Student s = new Student(id);
         int i = Collections.binarySearch(studentList, s, new PersonIDComparator());
 
-        System.out.println("Which part of the student would you like to modify?\n" +
-                "\t- Last Name (1)\n" +
-                "\t- First Name (2)\n" +
-                "\t- Date of Birth (3)\n" +
-                "\t- Sex (4)\n" +
-                "\t- Grade (5)");
+        System.out.println("Which part of the student would you like to modify?\n" + "\t- Last Name (1)\n"
+                + "\t- First Name (2)\n" + "\t- Date of Birth (3)\n" + "\t- Sex (4)\n" + "\t- Grade (5)");
         choice = Integer.parseInt(sConsoleIn.nextLine());
 
         switch (choice) {

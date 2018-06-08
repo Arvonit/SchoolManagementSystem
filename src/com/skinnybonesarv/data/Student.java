@@ -15,8 +15,13 @@ import java.util.Scanner;
 public class Student extends Person {
 
     private int mGrade;
-    private static File sFile = new File("student_info.txt");
-    private static int sNumOfStudents = 0;
+    private static File sFile;
+    private static int sNumOfStudents;
+
+    static {
+        sFile = new File("student_info.txt");
+        sNumOfStudents = 0;
+    }
 
     public Student(String lastName, String firstName, LocalDate dateOfBirth, Sex sex, int grade) {
         super(lastName, firstName, dateOfBirth, sex);
@@ -49,8 +54,8 @@ public class Student extends Person {
                     String lastName = lineParts[0];
                     String firstName = lineParts[1];
                     String[] dateOfBirthArr = lineParts[2].split("-");
-                    LocalDate dateOfBirth = LocalDate.of(Integer.parseInt(dateOfBirthArr[0]), Integer.parseInt(dateOfBirthArr[1]),
-                            Integer.parseInt(dateOfBirthArr[2]));
+                    LocalDate dateOfBirth = LocalDate.of(Integer.parseInt(dateOfBirthArr[0]),
+                            Integer.parseInt(dateOfBirthArr[1]), Integer.parseInt(dateOfBirthArr[2]));
                     Sex sex = Sex.valueOf(lineParts[3]);
                     int grade = Integer.parseInt(lineParts[4]);
                     int id = Integer.parseInt(lineParts[5]);
@@ -88,12 +93,12 @@ public class Student extends Person {
 
     @Override
     protected String toFile() {
-        return super.toFile() + new String().format("%d, %d", getGrade(), super.getID());
+        return super.toFile() + String.format("%d, %d", getGrade(), super.getID());
     }
 
     @Override
     public String toString() {
-        return super.toString() + new String().format("%-10d %d", getGrade(), super.getID());
+        return super.toString() + String.format("%-10d %d", getGrade(), super.getID());
     }
 
     @Override

@@ -89,12 +89,12 @@ public abstract class Person {
     protected abstract void writeToFile();
 
     protected String toFile() {
-        return new String().format("%s, %s, %s, %s, ", getLastName(), getFirstName(), getDateOfBirth(), getSex());
+        return String.format("%s, %s, %s, %s, ", getLastName(), getFirstName(), getDateOfBirth(), getSex());
     }
 
     @Override
     public String toString() {
-        return new String().format("%-15s %-15s %-20s %-10s ", getLastName(), getFirstName(), getDateOfBirth(), getSex());
+        return String.format("%-15s %-15s %-20s %-10s ", getLastName(), getFirstName(), getDateOfBirth(), getSex());
     }
 
 }
