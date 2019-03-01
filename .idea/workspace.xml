@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7312d93-e359-4635-bbf0-28f7715b0dfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SchoolManagementSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/model/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/model/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/CSVWritable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/CSVWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/FormatValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/PersonIDComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/PersonLastNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/StringFormatException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/view/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/skinnybonesarv/util/CSVWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/skinnybonesarv/util/FormatValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManagmentSystem.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManagmentSystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManagmentSystem.userlibraries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchoolManagmentSystem/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Class.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Schedule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/data/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/ui/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/util/FormatValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/util/PersonIDComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/util/PersonLastNameComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skinnybonesarv/util/StringFormatException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/skinnybonesarv/util/FormatValidatorTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,12 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
               <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -100,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/skinnybonesarv/util/CSVWriter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/skinnybonesarv/util/FormatValidatorTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -125,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,11 +134,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551408351008" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551409113680" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -286,14 +252,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24040511" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24307036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
@@ -305,6 +270,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Maven" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,6 +425,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/skinnybonesarv/util/CSVWriterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -469,10 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
